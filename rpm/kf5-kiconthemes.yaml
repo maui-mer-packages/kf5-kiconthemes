@@ -59,6 +59,10 @@ SubPackages:
       Description: |
         The %{name}-devel package contains the files necessary to develop applications |
         that use %{name}.
+      Requires:
+          - kf5-ki18n-devel
+          - kf5-kconfigwidgets-devel
+          - kf5-kitemviews-devel
       Files:
           - "%{_kf5_includedir}/kiconthemes_version.h"
           - "%{_kf5_includedir}/KIconThemes"

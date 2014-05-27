@@ -45,6 +45,9 @@ KDE Frameworks 5 Tier 3 integration module for icon themes.
 Summary:    Development files for %{name}
 Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
+Requires:   kf5-ki18n-devel
+Requires:   kf5-kconfigwidgets-devel
+Requires:   kf5-kitemviews-devel
 
 %description devel
 The %{name}-devel package contains the files necessary to develop applications |
