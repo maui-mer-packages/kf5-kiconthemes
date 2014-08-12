@@ -1,5 +1,5 @@
-Name         : kf5-kiconthemes
-Version      : 5.0.0
+Name         : kiconthemes
+Version      : 5.1.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -25,10 +25,9 @@ PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-ki18n-devel
-    - kf5-kconfigwidgets-devel
-    - kf5-kitemviews-devel
-    - gettext-devel
+    - ki18n-devel
+    - kconfigwidgets-devel
+    - kitemviews-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -60,12 +59,12 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications |
         that use %{name}.
       Requires:
-          - kf5-ki18n-devel
-          - kf5-kconfigwidgets-devel
-          - kf5-kitemviews-devel
+          - ki18n-devel
+          - kconfigwidgets-devel
+          - kitemviews-devel
       Files:
           - "%{_kf5_includedir}/kiconthemes_version.h"
           - "%{_kf5_includedir}/KIconThemes"
           - "%{_kf5_libdir}/libKF5IconThemes.so"
-          - "%{_kf5_libdir}/cmake/KF5IconThemes"
-          - "%{_datadir}/qt5/mkspecs/modules/qt_KIconThemes.pri"
+          - "%{_kf5_cmakedir}/KF5IconThemes"
+          - "%{_kf5_mkspecsdir}/qt_KIconThemes.pri"
