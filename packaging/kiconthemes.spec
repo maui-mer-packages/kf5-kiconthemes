@@ -78,7 +78,9 @@ rm -rf %{buildroot}
 # >> install post
 # << install post
 
-%files
+%find_lang kiconthemes5_qt --with-qt --all-name || :
+
+%files -f kiconthemes5_qt.lang
 %defattr(-,root,root,-)
 %doc COPYING.LIB README.md
 %{_kf5_bindir}/kiconfinder5

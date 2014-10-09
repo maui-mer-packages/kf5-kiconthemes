@@ -45,6 +45,9 @@ RequiresPost:
 RequiresPostUn:
     - /sbin/ldconfig
 
+LocaleName: kiconthemes5_qt
+LocaleOptions: "--with-qt --all-name || :"
+
 Files:
     - "%doc COPYING.LIB README.md"
     - "%{_kf5_bindir}/kiconfinder5"
